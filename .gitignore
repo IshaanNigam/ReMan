@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+
+# Local environment variables (keep .env.example tracked!)
+.env
+
+# Local SQLite database runtime files
+data/
+*.db
+*.db-shm
+*.db-wal
+
+# OS / Editor files
+.DS_Store
+.vscode/

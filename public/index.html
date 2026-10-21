@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RecipeGraph — Recursive Recipe Composition & Management System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- Top Navigation Bar -->
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-logo">🍲</div>
+      <div>
+        <div class="brand-title-row">
+          <h1>RecipeGraph</h1>
+          <span class="version-pill">Inter IIT 15.0</span>
+        </div>
+        <p>Recursive Recipe Composition &amp; DAG Dependency Engine</p>
+      </div>
+    </div>
+
+    <div class="stats-strip" id="globalStats">
+      <!-- Populated dynamically -->
+    </div>
+
+    <div class="topbar-right">
+      
+      <button class="theme-toggle-btn" onclick="openAdminModal()" title="Open Admin Backend Inspector">
+        <span>🛡️</span>
+        <span>Admin Console</span>
+      </button>
+      <button class="theme-toggle-btn" id="themeToggleBtn" onclick="toggleTheme()" title="Switch Light / Dark Mode">
+        <span id="themeIcon">☀️</span>
+        <span id="themeLabel">Light</span>
+      </button>
+
+      <!-- Auth Status / User Profile Bar -->
+      <div class="auth-bar" id="authBar">
+        <!-- Populated dynamically -->
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Workspace -->
+  <main class="workspace">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-controls">
+        <div class="search-wrapper">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="Search recipes or IDs... (Press /)" />
+        </div>
+
+        <div class="filter-pills">
+          <button class="filter-pill active" data-filter="all" onclick="setFilter('all')">All</button>
+          <button class="filter-pill" data-filter="nested" onclick="setFilter('nested')">Nested (Multi-Level)</button>
+          <button class="filter-pill" data-filter="base" onclick="setFilter('base')">Base Only</button>
+        </div>
+
+        <div class="sidebar-action-row">
+          <button class="btn btn-primary btn-block" id="newRecipeBtn">
+            <span>＋</span> Create New Recipe
+          </button>
+          <button class="btn btn-ghost btn-icon" id="importRecipeBtn" title="Import Recipe from JSON">
+            📥
+          </button>
+        </div>
+      </div>
+
+      <div id="recipeList" class="recipe-list"></div>
+    </aside>
+
+    <!-- Right Content Area -->
+    <section class="content-panel" id="contentPanel">
+      <div class="empty-state">
+        <div class="empty-icon">🥗</div>
+        <h3>Select a Recipe to Explore</h3>
+        <p>Choose any recipe from the sidebar to inspect its recursive component tree, visual dependency graph, and consolidated raw ingredients.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Authentication Modal (Email/Password + Google & GitHub OAuth) -->
+  <div class="modal-backdrop hidden" id="authModal">
+    <div class="modal auth-modal">
+      <div class="modal-header">
+        <div>
+          <h2 id="authModalTitle">Welcome to RecipeGraph</h2>
+          <p class="modal-subtitle">Sign in to create, edit, and manage recursive recipes</p>
+        </div>
+        <button class="btn-close" onclick="closeAuthModal()">&times;</button>
+      </div>
+
+      <div class="auth-modal-body">
+        <!-- Mode Switcher Tabs -->
+        <div class="auth-tabs">
+          <button type="button" class="auth-tab active" id="tabSignIn" onclick="switchAuthMode('login')">
+            Sign In
+          </button>
+          <button type="button" class="auth-tab" id="tabSignUp" onclick="switchAuthMode('register')">
+            Create Account
+          </button>
+        </div>
+
+        <!-- Social OAuth Buttons -->
+        <div class="oauth-buttons">
+          <a href="/api/auth/google" class="btn-oauth btn-google" style="text-decoration:none;">
+            <svg width="18" height="18" viewBox="0 0 48 48">
+              <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+              <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+              <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+              <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+            </svg>
+            <span>Continue with Google</span>
+          </a>
+
+          <a href="/api/auth/github" class="btn-oauth btn-github" style="text-decoration:none;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span>Continue with GitHub</span>
+          </a>
+        </div>        
+
+        <div class="auth-divider">
+          <span>OR CONTINUE WITH EMAIL</span>
+        </div>
+
+        <!-- Email & Password Form -->
+        <form id="emailAuthForm">
+          <div class="form-group hidden" id="authNameGroup">
+            <label>Full Name</label>
+            <input type="text" id="authFullName" placeholder="e.g., Aarav Sharma" />
+          </div>
+
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" id="authEmailInput" required placeholder="chef@example.com" value="demo@recipegraph.dev" />
+          </div>
+
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" id="authPasswordInput" required placeholder="••••••••" value="password123" />
+          </div>
+
+          <div id="authErrorBanner" class="error-banner hidden"></div>
+
+          <button type="submit" class="btn btn-primary btn-block auth-submit-btn" id="authSubmitBtn">
+            Sign In with Email
+          </button>
+        </form>
+
+        <div class="demo-creds-hint">
+          <span>💡 Demo Account: <code>demo@recipegraph.dev</code> / <code>password123</code></span>
+          <button type="button" class="btn-link" onclick="fillDemoCredentials()">Fill Demo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Create / Edit Recipe Modal -->
+  <div class="modal-backdrop hidden" id="recipeModal">
+    <div class="modal">
+      <div class="modal-header">
+        <div>
+          <h2 id="modalTitle">Create Recipe</h2>
+          <p class="modal-subtitle">Combine raw ingredients and existing recipes to any depth.</p>
+        </div>
+        <button class="btn-close" id="closeModalBtn">&times;</button>
+      </div>
+
+      <form id="recipeForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Recipe Name *</label>
+            <input type="text" id="formRecipeName" required placeholder="e.g., Lasagna Romana" />
+          </div>
+          <div class="form-group small">
+            <label>Custom ID (opt)</label>
+            <input type="text" id="formRecipeCustomId" placeholder="recipe_501" />
+          </div>
+          <div class="form-group small">
+            <label>Base Servings *</label>
+            <input type="number" id="formServings" min="1" value="2" required />
+          </div>
+        </div>
+
+        <div class="components-builder">
+          <div class="builder-header">
+            <div>
+              <h3>Recipe Components</h3>
+              <span class="builder-hint">Mix raw ingredients and previously created recipes</span>
+            </div>
+            <div class="builder-actions">
+              <button type="button" class="btn btn-ingredient btn-sm" id="addIngredientRowBtn">
+                ＋ Raw Ingredient
+              </button>
+              <button type="button" class="btn btn-subrecipe btn-sm" id="addSubRecipeRowBtn">
+                ＋ Existing Recipe
+              </button>
+            </div>
+          </div>
+
+          <div id="formComponentsList" class="form-components-list"></div>
+          <datalist id="knownIngredientsList"></datalist>
+        </div>
+
+        <div id="formError" class="error-banner hidden"></div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-ghost" id="cancelModalBtn">Cancel</button>
+          <button type="submit" class="btn btn-primary">💾 Save Recipe</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Admin Backend Inspector Modal -->
+  <div class="modal-backdrop hidden" id="adminModal">
+    <div class="modal" style="max-width: 960px; width: 95%;">
+      <div class="modal-header">
+        <div>
+          <h2>🛡️ Admin Backend &amp; Database Inspector</h2>
+          <p class="modal-subtitle">Real-time view of Users, Relational Tables, System Health, and API Logs</p>
+        </div>
+        <div style="display:flex; gap:0.5rem; align-items:center;">
+          <button class="btn btn-ghost btn-sm" onclick="refreshAdminData()">🔄 Refresh</button>
+          <button class="btn-close" onclick="closeAdminModal()">&times;</button>
+        </div>
+      </div>
+
+      <div style="padding: 1.25rem; overflow-y: auto; display: flex; flex-direction: column; gap: 1rem;">
+        <!-- System Metrics Bar -->
+        <div id="adminMetricsStrip" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.75rem;"></div>
+
+        <!-- Admin Navigation Tabs -->
+        <div class="view-tabs" style="border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.5rem;">
+          <button class="tab-btn active" id="admTab_users" onclick="switchAdminTab('users')">👥 Users Table</button>
+          <button class="tab-btn" id="admTab_tables" onclick="switchAdminTab('tables')">🗄️ DB Tables (Recipes &amp; Edges)</button>
+          <button class="tab-btn" id="admTab_logs" onclick="switchAdminTab('logs')">📡 Live API Request Logs</button>
+          <button class="tab-btn" id="admTab_raw" onclick="switchAdminTab('raw')">{ } Raw DB JSON</button>
+        </div>
+
+        <!-- Dynamic Admin Content -->
+        <div id="adminTabContent" style="min-height: 340px; max-height: 55vh; overflow-y: auto;"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Hidden File Input for JSON Import -->
+  <input type="file" id="jsonFileInput" accept=".json" class="hidden" />
+
+  <script src="app.js"></script>
+</body>
+</html>

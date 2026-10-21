@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: recipe_management_app
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - JWT_SECRET=super_secret_inter_iit_jwt_key_2026
+      - DB_PATH=/app/data/recipes.db
+    volumes:
+      - recipe_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  recipe_data:

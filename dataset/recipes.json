@@ -1,0 +1,1570 @@
+[
+  {
+    "id": "recipe_tomato_sauce",
+    "name": "Tomato Sauce",
+    "category": "Sauces",
+    "servings": 4,
+    "description": "Base recipe for Tomato Sauce.",
+    "components": [
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_tomato",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_garlic",
+        "quantity": 20,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_onion",
+        "quantity": 10,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_white_sauce",
+    "name": "White Sauce",
+    "category": "Sauces",
+    "servings": 4,
+    "description": "Base recipe for White Sauce.",
+    "components": [
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_black_pepper",
+        "quantity": 5,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_butter",
+        "quantity": 10,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_milk",
+        "quantity": 50,
+        "unit": "ml"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_flour",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_salt",
+        "quantity": 500,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_basic_gravy",
+    "name": "Basic Gravy",
+    "category": "Indian",
+    "servings": 4,
+    "description": "Base recipe for Basic Gravy.",
+    "components": [
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_onion",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_oil",
+        "quantity": 10,
+        "unit": "ml"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_tomato",
+        "quantity": 20,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_turmeric",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_ginger",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_salt",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_cumin",
+        "quantity": 20,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_bread_dough",
+    "name": "Bread Dough",
+    "category": "Bakery",
+    "servings": 1,
+    "description": "Base recipe for Bread Dough.",
+    "components": [
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_salt",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_bread_flour",
+        "quantity": 10,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_sugar",
+        "quantity": 150,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_pasta_dough",
+    "name": "Pasta Dough",
+    "category": "Pasta",
+    "servings": 4,
+    "description": "Base recipe for Pasta Dough.",
+    "components": [
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_salt",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_egg",
+        "quantity": 5,
+        "unit": "piece"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_flour",
+        "quantity": 10,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_pesto",
+    "name": "Pesto",
+    "category": "Sauces",
+    "servings": 4,
+    "description": "Base recipe for Pesto.",
+    "components": [
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_basil",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_olive_oil",
+        "quantity": 20,
+        "unit": "ml"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_garlic",
+        "quantity": 5,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_parmesan",
+        "quantity": 50,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_bolognese_base",
+    "name": "Bolognese Base",
+    "category": "Sauces",
+    "servings": 4,
+    "description": "Base recipe for Bolognese Base.",
+    "components": [
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_beef",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_onion",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_black_pepper",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_garlic",
+        "quantity": 20,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_curry_base",
+    "name": "Curry Base",
+    "category": "Indian",
+    "servings": 4,
+    "description": "Base recipe for Curry Base.",
+    "components": [
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_ginger",
+        "quantity": 20,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_tomato",
+        "quantity": 500,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_turmeric",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_onion",
+        "quantity": 20,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_oil",
+        "quantity": 300,
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "id": "recipe_tikka_marinade",
+    "name": "Tikka Marinade",
+    "category": "Marinades",
+    "servings": 4,
+    "description": "Base recipe for Tikka Marinade.",
+    "components": [
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_garlic",
+        "quantity": 5,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_ginger",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_garam_masala",
+        "quantity": 5,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_chilli_powder",
+        "quantity": 150,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_stir_fry_sauce",
+    "name": "Stir Fry Sauce",
+    "category": "Asian",
+    "servings": 4,
+    "description": "Base recipe for Stir Fry Sauce.",
+    "components": [
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_honey",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_soy_sauce",
+        "quantity": 300,
+        "unit": "ml"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_garlic",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_vinegar",
+        "quantity": 300,
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "id": "recipe_chocolate_base",
+    "name": "Chocolate Base",
+    "category": "Desserts",
+    "servings": 6,
+    "description": "Base recipe for Chocolate Base.",
+    "components": [
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_butter",
+        "quantity": 500,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_chocolate",
+        "quantity": 500,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_cocoa",
+        "quantity": 100,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_vanilla_cream",
+    "name": "Vanilla Cream",
+    "category": "Desserts",
+    "servings": 6,
+    "description": "Base recipe for Vanilla Cream.",
+    "components": [
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_vanilla",
+        "quantity": 50,
+        "unit": "ml"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_sugar",
+        "quantity": 20,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_cream",
+        "quantity": 500,
+        "unit": "ml"
+      }
+    ]
+  },
+  {
+    "id": "recipe_pancake_batter",
+    "name": "Pancake Batter",
+    "category": "Breakfast",
+    "servings": 4,
+    "description": "Base recipe for Pancake Batter.",
+    "components": [
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_flour",
+        "quantity": 20,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_butter",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_sugar",
+        "quantity": 10,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_egg",
+        "quantity": 4,
+        "unit": "piece"
+      }
+    ]
+  },
+  {
+    "id": "recipe_masala_paste",
+    "name": "Masala Paste",
+    "category": "Indian",
+    "servings": 4,
+    "description": "Base recipe for Masala Paste.",
+    "components": [
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_cumin",
+        "quantity": 500,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_coriander",
+        "quantity": 5,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_garlic",
+        "quantity": 10,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_ginger",
+        "quantity": 500,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_fried_onions",
+    "name": "Fried Onions",
+    "category": "Sides",
+    "servings": 4,
+    "description": "Base recipe for Fried Onions.",
+    "components": [
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_salt",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_sunflower_oil",
+        "quantity": 200,
+        "unit": "ml"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_red_onion",
+        "quantity": 20,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_pizza_sauce",
+    "name": "Pizza Sauce",
+    "category": "Sauces",
+    "servings": 4,
+    "description": "Intermediate recipe for Pizza Sauce.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_tomato_sauce",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_oregano",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_paprika",
+        "quantity": 5,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_bolognese",
+    "name": "Bolognese Sauce",
+    "category": "Sauces",
+    "servings": 4,
+    "description": "Intermediate recipe for Bolognese Sauce.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_bolognese_base",
+        "quantity": 1
+      },
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_tomato_sauce",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_basil",
+        "quantity": 100,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_butter_chicken_sauce",
+    "name": "Butter Chicken Sauce",
+    "category": "Indian",
+    "servings": 4,
+    "description": "Intermediate recipe for Butter Chicken Sauce.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_basic_gravy",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_butter",
+        "quantity": 500,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_cream",
+        "quantity": 30,
+        "unit": "ml"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_garam_masala",
+        "quantity": 500,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_tikka_sauce",
+    "name": "Tikka Sauce",
+    "category": "Indian",
+    "servings": 4,
+    "description": "Intermediate recipe for Tikka Sauce.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_curry_base",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_cream",
+        "quantity": 20,
+        "unit": "ml"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_garam_masala",
+        "quantity": 100,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_lasagna_sauce",
+    "name": "Lasagna Sauce",
+    "category": "Italian",
+    "servings": 6,
+    "description": "Intermediate recipe for Lasagna Sauce.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_bolognese",
+        "quantity": 1
+      },
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_white_sauce",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_parmesan",
+        "quantity": 500,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_cream_pesto",
+    "name": "Creamy Pesto",
+    "category": "Sauces",
+    "servings": 4,
+    "description": "Intermediate recipe for Creamy Pesto.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_pesto",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_cream",
+        "quantity": 50,
+        "unit": "ml"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_parmesan",
+        "quantity": 20,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_garlic_butter",
+    "name": "Garlic Butter",
+    "category": "Sauces",
+    "servings": 4,
+    "description": "Intermediate recipe for Garlic Butter.",
+    "components": [
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_butter",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_garlic",
+        "quantity": 20,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_parsley",
+        "quantity": 500,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_spiced_rice_base",
+    "name": "Spiced Rice Base",
+    "category": "Rice",
+    "servings": 4,
+    "description": "Intermediate recipe for Spiced Rice Base.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_masala_paste",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_basmati_rice",
+        "quantity": 500,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_cinnamon",
+        "quantity": 1,
+        "unit": "piece"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_cardamom",
+        "quantity": 5,
+        "unit": "piece"
+      }
+    ]
+  },
+  {
+    "id": "recipe_fried_rice_sauce",
+    "name": "Fried Rice Sauce",
+    "category": "Asian",
+    "servings": 4,
+    "description": "Intermediate recipe for Fried Rice Sauce.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_stir_fry_sauce",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_sesame_oil",
+        "quantity": 150,
+        "unit": "ml"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_chilli",
+        "quantity": 300,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_chocolate_frosting",
+    "name": "Chocolate Frosting",
+    "category": "Desserts",
+    "servings": 6,
+    "description": "Intermediate recipe for Chocolate Frosting.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_chocolate_base",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_butter",
+        "quantity": 5,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_sugar",
+        "quantity": 10,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_vanilla_filling",
+    "name": "Vanilla Filling",
+    "category": "Desserts",
+    "servings": 6,
+    "description": "Intermediate recipe for Vanilla Filling.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_vanilla_cream",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_cornstarch",
+        "quantity": 150,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_pancake_sauce",
+    "name": "Pancake Sauce",
+    "category": "Breakfast",
+    "servings": 4,
+    "description": "Intermediate recipe for Pancake Sauce.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_vanilla_cream",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_honey",
+        "quantity": 100,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_margherita_pizza",
+    "name": "Margherita Pizza",
+    "category": "Main Course",
+    "servings": 2,
+    "description": "Main dish recipe for Margherita Pizza.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_bread_dough",
+        "quantity": 1
+      },
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_pizza_sauce",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_mozzarella",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_basil",
+        "quantity": 5,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_pepperoni_pizza",
+    "name": "Pepperoni Pizza",
+    "category": "Main Course",
+    "servings": 2,
+    "description": "Main dish recipe for Pepperoni Pizza.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_bread_dough",
+        "quantity": 1
+      },
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_pizza_sauce",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_cheese",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_paprika",
+        "quantity": 10,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_spaghetti_bolognese",
+    "name": "Spaghetti Bolognese",
+    "category": "Main Course",
+    "servings": 4,
+    "description": "Main dish recipe for Spaghetti Bolognese.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_bolognese",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_pasta",
+        "quantity": 10,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_parmesan",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_basil",
+        "quantity": 10,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_lasagna",
+    "name": "Lasagna",
+    "category": "Main Course",
+    "servings": 6,
+    "description": "Main dish recipe for Lasagna.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_pasta_dough",
+        "quantity": 1
+      },
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_lasagna_sauce",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_mozzarella",
+        "quantity": 500,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_parmesan",
+        "quantity": 20,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_butter_chicken",
+    "name": "Butter Chicken",
+    "category": "Main Course",
+    "servings": 4,
+    "description": "Main dish recipe for Butter Chicken.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_butter_chicken_sauce",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_chicken",
+        "quantity": 20,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_coriander",
+        "quantity": 300,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_chicken_tikka",
+    "name": "Chicken Tikka",
+    "category": "Main Course",
+    "servings": 4,
+    "description": "Main dish recipe for Chicken Tikka.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_tikka_sauce",
+        "quantity": 1
+      },
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_tikka_marinade",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_chicken",
+        "quantity": 500,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_coriander",
+        "quantity": 20,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_pesto_pasta",
+    "name": "Pesto Pasta",
+    "category": "Main Course",
+    "servings": 4,
+    "description": "Main dish recipe for Pesto Pasta.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_pesto",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_pasta",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_parmesan",
+        "quantity": 500,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_creamy_pesto_pasta",
+    "name": "Creamy Pesto Pasta",
+    "category": "Main Course",
+    "servings": 4,
+    "description": "Main dish recipe for Creamy Pesto Pasta.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_cream_pesto",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_pasta",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_chicken",
+        "quantity": 50,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_fried_rice",
+    "name": "Vegetable Fried Rice",
+    "category": "Asian",
+    "servings": 4,
+    "description": "Main dish recipe for Vegetable Fried Rice.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_fried_rice_sauce",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_rice",
+        "quantity": 500,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_carrot",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_peas",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_capsicum",
+        "quantity": 200,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_chicken_fried_rice",
+    "name": "Chicken Fried Rice",
+    "category": "Asian",
+    "servings": 4,
+    "description": "Main dish recipe for Chicken Fried Rice.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_fried_rice_sauce",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_rice",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_chicken",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_carrot",
+        "quantity": 500,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_spiced_rice",
+    "name": "Spiced Rice",
+    "category": "Rice",
+    "servings": 4,
+    "description": "Main dish recipe for Spiced Rice.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_spiced_rice_base",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_peas",
+        "quantity": 300,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_carrot",
+        "quantity": 10,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_chocolate_cake",
+    "name": "Chocolate Cake",
+    "category": "Desserts",
+    "servings": 6,
+    "description": "Main dish recipe for Chocolate Cake.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_chocolate_base",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_flour",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_egg",
+        "quantity": 2,
+        "unit": "piece"
+      }
+    ]
+  },
+  {
+    "id": "recipe_chocolate_cupcake",
+    "name": "Chocolate Cupcake",
+    "category": "Desserts",
+    "servings": 6,
+    "description": "Main dish recipe for Chocolate Cupcake.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_chocolate_base",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_flour",
+        "quantity": 10,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_egg",
+        "quantity": 3,
+        "unit": "piece"
+      }
+    ]
+  },
+  {
+    "id": "recipe_pancakes",
+    "name": "Pancakes",
+    "category": "Breakfast",
+    "servings": 4,
+    "description": "Main dish recipe for Pancakes.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_pancake_batter",
+        "quantity": 1
+      },
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_pancake_sauce",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_butter",
+        "quantity": 5,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_creamy_chicken_pasta",
+    "name": "Creamy Chicken Pasta",
+    "category": "Specialty",
+    "servings": 8,
+    "description": "Complex recipe for Creamy Chicken Pasta.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_creamy_pesto_pasta",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_mushroom",
+        "quantity": 500,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_spinach",
+        "quantity": 50,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_four_cheese_pasta",
+    "name": "Four Cheese Pasta",
+    "category": "Specialty",
+    "servings": 8,
+    "description": "Complex recipe for Four Cheese Pasta.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_white_sauce",
+        "quantity": 1
+      },
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_pesto",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_mozzarella",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_parmesan",
+        "quantity": 5,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_cheese",
+        "quantity": 10,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_pizza_supreme",
+    "name": "Pizza Supreme",
+    "category": "Specialty",
+    "servings": 6,
+    "description": "Complex recipe for Pizza Supreme.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_bread_dough",
+        "quantity": 1
+      },
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_pizza_sauce",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_mushroom",
+        "quantity": 5,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_capsicum",
+        "quantity": 50,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_onion",
+        "quantity": 10,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_cheese",
+        "quantity": 5,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_chicken_lasagna",
+    "name": "Chicken Lasagna",
+    "category": "Specialty",
+    "servings": 4,
+    "description": "Complex recipe for Chicken Lasagna.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_lasagna_sauce",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_chicken",
+        "quantity": 10,
+        "unit": "g"
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_mozzarella",
+        "quantity": 500,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_spicy_chicken_rice",
+    "name": "Spicy Chicken Rice",
+    "category": "Specialty",
+    "servings": 8,
+    "description": "Complex recipe for Spicy Chicken Rice.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_spiced_rice",
+        "quantity": 1
+      },
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_butter_chicken_sauce",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_chicken",
+        "quantity": 100,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_chocolate_layer_cake",
+    "name": "Chocolate Layer Cake",
+    "category": "Specialty",
+    "servings": 4,
+    "description": "Complex recipe for Chocolate Layer Cake.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_chocolate_cake",
+        "quantity": 1
+      },
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_chocolate_frosting",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_chocolate",
+        "quantity": 300,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_cream_pancake_stack",
+    "name": "Cream Pancake Stack",
+    "category": "Specialty",
+    "servings": 4,
+    "description": "Complex recipe for Cream Pancake Stack.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_pancakes",
+        "quantity": 1
+      },
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_vanilla_filling",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_strawberry",
+        "quantity": 500,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_italian_pasta_bowl",
+    "name": "Italian Pasta Bowl",
+    "category": "Specialty",
+    "servings": 4,
+    "description": "Complex recipe for Italian Pasta Bowl.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_spaghetti_bolognese",
+        "quantity": 1
+      },
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_pesto_pasta",
+        "quantity": 1
+      },
+      {
+        "type": "ingredient",
+        "ingredient_id": "ing_basil",
+        "quantity": 300,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "id": "recipe_italian_dinner",
+    "name": "Italian Dinner",
+    "category": "Meal",
+    "servings": 8,
+    "description": "Composite meal containing Italian Dinner.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_pizza_supreme",
+        "quantity": 1
+      },
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_italian_pasta_bowl",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "recipe_indian_dinner",
+    "name": "Indian Dinner",
+    "category": "Meal",
+    "servings": 8,
+    "description": "Composite meal containing Indian Dinner.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_butter_chicken",
+        "quantity": 1
+      },
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_spiced_rice",
+        "quantity": 1
+      },
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_chicken_tikka",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "recipe_family_pasta_feast",
+    "name": "Family Pasta Feast",
+    "category": "Meal",
+    "servings": 6,
+    "description": "Composite meal containing Family Pasta Feast.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_creamy_chicken_pasta",
+        "quantity": 1
+      },
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_four_cheese_pasta",
+        "quantity": 1
+      },
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_lasagna",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "recipe_dessert_platter",
+    "name": "Dessert Platter",
+    "category": "Meal",
+    "servings": 6,
+    "description": "Composite meal containing Dessert Platter.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_chocolate_layer_cake",
+        "quantity": 1
+      },
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_cream_pancake_stack",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "recipe_weekend_feast",
+    "name": "Weekend Feast",
+    "category": "Meal",
+    "servings": 10,
+    "description": "A large meal composed from multiple existing recipes.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_italian_dinner",
+        "quantity": 1
+      },
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_indian_dinner",
+        "quantity": 1
+      },
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_dessert_platter",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": "recipe_grand_feast",
+    "name": "Grand Feast",
+    "category": "Meal",
+    "servings": 20,
+    "description": "A large composite recipe demonstrating deep recipe reuse.",
+    "components": [
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_weekend_feast",
+        "quantity": 1
+      },
+      {
+        "type": "recipe",
+        "recipe_id": "recipe_family_pasta_feast",
+        "quantity": 1
+      }
+    ]
+  }
+]
